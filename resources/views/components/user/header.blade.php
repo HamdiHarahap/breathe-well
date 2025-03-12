@@ -1,4 +1,4 @@
-<header class="bg-white px-44 py-5 shadow-lg fixed w-full z-50">
+<header class="bg-white px-44 py-5 shadow-lg fixed w-full z-40">
     <nav class="flex items-center justify-between">
         <a href="/" class="text-3xl font-bold text-blue-600">BreatheWell</a>
         <ul class="flex gap-5 font-semibold">

@@ -4,7 +4,7 @@
         <ul class="flex gap-5 font-semibold">
             <li><a href="/">Beranda</a></li>
             <li><a href="/cek-kesehatan">Cek Kesehatan</a></li>
-            <li><a href="">Tentang Kami</a></li>
+            <li><a href="/#tentang-kami">Tentang Kami</a></li>
         </ul>
     </nav>
 </header>

@@ -59,6 +59,16 @@ class PageController extends Controller
         ]);
     }
 
+    public function indicationEditPage(string $id)
+    {
+        $data = Indication::where('id', $id)->first();
+
+        return view('admin.indication-edit', [
+            'title' => 'Edit Indikasi',
+            'data' => $data
+        ]);
+    }
+
     public function diseasePage()
     {
         $data = Disease::paginate(10);
@@ -76,6 +86,18 @@ class PageController extends Controller
         return view('admin.disease_add', [
             'title' => 'Tambah Penyakit',
             'data' => $data,
+        ]);
+    }
+
+    public function diseaseEditPage(string $id)
+    {
+        $disease = Disease::where('id', $id)->first();
+        $data = Indication::all();
+
+        return view('admin.disease-edit', [
+            'title' => 'Edit Penyakit',
+            'data' => $data,
+            'disease' => $disease
         ]);
     }
 

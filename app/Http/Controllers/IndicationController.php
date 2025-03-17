@@ -22,6 +22,21 @@ class IndicationController extends Controller
         return redirect()->route('indication');
     }
 
+    public function update(Request $request, string $id)
+    {
+        $request->validate([
+            'gejala' => 'required',
+            'pertanyaan' => 'required'
+        ]);
+
+        Indication::where('id', $id)->update([
+            'gejala' => $request->input('gejala'),
+            'pertanyaan' => $request->input('pertanyaan')
+        ]);
+
+        return redirect()->route('indication');
+    }
+
     public function destroy(string $id)
     {
         $indication = Indication::where('id', $id)->first();

@@ -24,10 +24,13 @@ Route::middleware('auth')->group(function () {
         Route::get('/dashboard', [PageController::class, 'dashboardPage'])->name('dashboard');
         Route::get('/indication', [PageController::class, 'indicationPage'])->name('indication');
         Route::get('/indication-add', [PageController::class, 'indicationAddPage'])->name('indication.add');
+        Route::get('/indication-edit/{id}', [PageController::class, 'indicationEditPage'])->name('indication.edit');
         Route::get('/disease', [PageController::class, 'diseasePage'])->name('disease');
         Route::get('/disease-add', [PageController::class, 'diseaseAddPage'])->name('disease.add');
+        Route::get('/disease-edit/{id}', [PageController::class, 'diseaseEditPage'])->name('disease.edit');
 
         Route::post('/indcation-add', [IndicationController::class, 'store'])->name('indication.store');
+        Route::put('/indication-edit/{id}', [IndicationController::class, 'update'])->name('indication.edit');
         Route::delete('/indication/{id}', [IndicationController::class, 'destroy'])->name('indication.destroy');
         Route::post('/disease-add', [DiseaseController::class, 'store'])->name('disease.store');
         Route::delete('/disease/{id}', [DiseaseController::class, 'destroy'])->name('disease.destroy');

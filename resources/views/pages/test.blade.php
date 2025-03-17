@@ -14,7 +14,7 @@
 
     <div id="overlay" class="fixed inset-0 bg-black/30 backdrop-blur-sm hidden z-40"></div>
 
-    <section id="instruction" class="bg-gray-200 py-5 px-8 w-[50%] mx-auto rounded-md flex-col gap-3 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 shadow-lg hidden z-50">
+    <section id="instruction" class="bg-gray-200 py-5 px-8 w-[50%] mx-auto rounded-md flex-col gap-3 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 shadow-lg hidden z-50">
         <h3 class="text-xl font-semibold text-center">Instruksi Pengerjaan</h3>
         <ul class="list-disc list-inside mt-2">
             <li>Jawablah sesuai dengan gejala yang Anda alami.</li>

@@ -29,7 +29,6 @@ class DiseaseController extends Controller
         $penyakitProlog = str_replace(" ", "_", strtolower($penyakit));
         $fakta = "penyakit([$gejalaProlog], $penyakitProlog).";
 
-        // Baca isi file
         if (file_exists($filePath)) {
             $isiFile = file_get_contents($filePath);
             $isiBaru = str_replace($fakta . "\n", '', $isiFile);

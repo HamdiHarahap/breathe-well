@@ -10,7 +10,7 @@
 <body>
     <section class="flex min-h-screen items-center flex-col justify-center">
         <div class="flex flex-col items-center">
-            <h2 class="font-bold text-xl">Admin DoctorBot</h2>
+            <h2 class="font-bold text-xl">Admin BreatheWell</h2>
             @if (session('error'))
             <div class="bg-red-500 rounded-lg mx-auto py-3 w-full mt-6 px-3 text-white">
                 <p>{{session('error')}}</p>

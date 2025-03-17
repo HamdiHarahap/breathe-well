@@ -34,7 +34,7 @@
                         <td class="p-2">{{ Str::limit($item->penanganan, 20) }}</td>
                         <td class="p-2">
                             <div class="flex gap-1">
-                                <a href="/admin/edit/{{$item->id}}" class="flex items-center justify-center bg-yellow-300 hover:bg-yellow-500 rounded-lg cursor-pointer p-1 w-fit">
+                                <a href="/admin/disease-edit/{{$item->id}}" class="flex items-center justify-center bg-yellow-300 hover:bg-yellow-500 rounded-lg cursor-pointer p-1 w-fit">
                                     <img src="../assets/icons/edit.svg" alt="logo" class="w-6">
                                 </a>
                                 <form action="{{ route('disease.destroy', ['id' => $item->id ]) }}" method="POST">

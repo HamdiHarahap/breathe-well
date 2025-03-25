@@ -7,14 +7,14 @@
         <div class="flex flex-col gap-2">
             <h3 class="font-semibold text-lg">Kontak Kami</h3>
             <div class="flex flex-col gap-1">
-                <div class="flex items-center gap-3">
+                <a class="flex items-center gap-3">
                     <img src="{{ asset('/assets/icons/whatsapp.svg') }}" alt="" class="w-6">
                     <p>+62 812 6036 6275</p>
-                </div>
-                <div class="flex items-center gap-3">
+                </a>
+                <a class="flex items-center gap-3">
                     <img src="{{ asset('/assets/icons/gmail.svg') }}" alt="" class="w-6">
                     <p>breathewell@gmail.com</p>
-                </div>
+                </a>
             </div>
         </div>
         <div class="flex flex-col gap-2">
@@ -28,16 +28,16 @@
         <div class="flex flex-col gap-2">
             <h3 class="font-semibold text-lg">Ikuti Kami</h3>
             <div class="grid grid-cols-4 gap-3">
-                <div class="border-2 rounded-full p-2 w-fit cursor-pointer hover:scale-110 hover:bg-gray-500">
+                <div class="border-2 rounded-full p-2 w-fit cursor-pointer hover:scale-110 hover:bg-gray-500 transition-all">
                     <img src="{{ asset('/assets/icons/instagram.svg') }}" alt="" class="w-4">
                 </div>
-                <div class="border-2 rounded-full p-2 w-fit cursor-pointer hover:scale-110 hover:bg-gray-500">
+                <div class="border-2 rounded-full p-2 w-fit cursor-pointer hover:scale-110 hover:bg-gray-500 transition-all">
                     <img src="{{ asset('/assets/icons/twitter.svg') }}" alt="" class="w-4">
                 </div>
-                <div class="border-2 rounded-full p-2 w-fit cursor-pointer hover:scale-110 hover:bg-gray-500">
+                <div class="border-2 rounded-full p-2 w-fit cursor-pointer hover:scale-110 hover:bg-gray-500 transition-all">
                     <img src="{{ asset('/assets/icons/youtube.svg') }}" alt="" class="w-4">
                 </div>
-                <div class="border-2 rounded-full p-2 w-fit cursor-pointer hover:scale-110 hover:bg-gray-500">
+                <div class="border-2 rounded-full p-2 w-fit cursor-pointer hover:scale-110 hover:bg-gray-500 transition-all">
                     <img src="{{ asset('/assets/icons/tiktok.svg') }}" alt="" class="w-4">
                 </div>
             </div>
